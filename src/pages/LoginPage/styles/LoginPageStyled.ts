@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const LoginPageContainer = styled.div`
-    height: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #57714a 0%, rgba(87, 113, 74, 1) 100%);
 `;
 
 export const LoginPageHeader = styled.header`
@@ -11,7 +12,6 @@ export const LoginPageHeader = styled.header`
     align-items: center;
     justify-content: space-between;
     padding: 29px 72px;
-    background: ${({ theme }) => theme.colors.navbarBackground};
 
     a {
         display: flex;
@@ -43,14 +43,11 @@ export const RegisterContainer = styled.div`
 
 export const LoginPageBody = styled.div`
     width: 100%;
-    height: calc(100% - 90px);
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    background: ${({ theme }) => theme.colors.navbarBackground};
 
     @media screen and (max-width: 425px) {
-        height: calc(100% - 52px);
         padding-top: 80px;
     }
 `;
