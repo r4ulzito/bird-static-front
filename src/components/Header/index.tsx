@@ -24,6 +24,7 @@ export const Header = () => {
                     aria-disabled="true"
                     onClick={() => navigate("/login")}
                 >
+                    <p>Olá, João</p>
                     <UserCircle size={42} />
                 </S.userContainer>
             </S.HeaderContainer>
