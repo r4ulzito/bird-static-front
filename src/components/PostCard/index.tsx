@@ -1,4 +1,3 @@
-import { Trash, PencilSimple } from "phosphor-react";
 import * as S from "./styles/PostCardStyled";
 import { PostDTO } from "../../dto/postDTO";
 
@@ -17,16 +16,6 @@ export const PostCard = ({ post }: IPost) => {
                         </S.PostBirdLocaleStyled>
                         <S.PostBirdNameStyled>{post.name}</S.PostBirdNameStyled>
                     </S.HeaderTextsContainer>
-                    <S.HeaderButtonsContainer>
-                        <S.EditButton>
-                            <a aria-label="editar post">
-                                <PencilSimple size={18} weight="bold" />
-                            </a>
-                        </S.EditButton>
-                        <S.TrashButton aria-label="apagar post">
-                            <Trash size={18} weight="bold" />
-                        </S.TrashButton>
-                    </S.HeaderButtonsContainer>
                 </S.PostCardHeaderStyled>
                 <S.PostContentStyled>
                     <S.PostImageStyled
