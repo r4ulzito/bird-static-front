@@ -32,42 +32,6 @@ export const PostCardHeaderStyled = styled.header`
 
 export const HeaderTextsContainer = styled.div``;
 
-export const TrashButton = styled.button`
-    & svg {
-        color: ${({ theme }) => theme.colors.primaryColor};
-        transition: all 0.3s;
-    }
-
-    :hover {
-        & svg {
-            color: ${({ theme }) => theme.colors.deletePostButton};
-        }
-    }
-`;
-
-export const EditButton = styled.button`
-    & svg {
-        color: ${({ theme }) => theme.colors.primaryColor};
-        transition: all 0.3s;
-    }
-
-    :hover {
-        & svg {
-            color: ${({ theme }) => theme.colors.hoverPrimaryButtonColor};
-        }
-    }
-`;
-
-export const HeaderButtonsContainer = styled.div`
-    button {
-        background: transparent;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding-left: 6px;
-    }
-`;
-
 export const PostBirdLocaleStyled = styled.p`
     font-size: ${({ theme }) => theme.fontSize.md};
     font-weight: 400;
